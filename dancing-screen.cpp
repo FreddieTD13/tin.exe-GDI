@@ -17,13 +17,12 @@ int main() {
         int sourceX = rand() % (screenWidth - chunkWidth);
         int sourceY = rand() % (screenHeight - chunkHeight);
 
-        int offsetX = (rand() % 7) - 3; // Random value from -3 to 3
-        int offsetY = (rand() % 7) - 3; // Random value from -3 to 3
+        int offsetX = (rand() % 11) - 5; // Random value from -5 to 5
+        int offsetY = (rand() % 11) - 5; // Random value from -5 to 5
 
         int destX = sourceX + offsetX;
         int destY = sourceY + offsetY;
 
-        // Ensure the destination stays within the screen bounds
         if (destX < 0) destX = 0;
         if (destY < 0) destY = 0;
         if (destX + chunkWidth > screenWidth) destX = screenWidth - chunkWidth;
