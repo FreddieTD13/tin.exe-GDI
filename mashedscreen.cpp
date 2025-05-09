@@ -11,8 +11,8 @@ int main() {
         int screenWidth = GetSystemMetrics(SM_CXSCREEN);
         int screenHeight = GetSystemMetrics(SM_CYSCREEN);
 
-        int chunkWidth = screenWidth / 4;
-        int chunkHeight = screenHeight / 4;
+        int chunkWidth = screenWidth / 2;
+        int chunkHeight = screenHeight / 2;
 
         int sourceX = rand() % (screenWidth - chunkWidth);
         int sourceY = rand() % (screenHeight - chunkHeight);
